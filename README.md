@@ -10,7 +10,7 @@ ReplaceAll Methods is available from Go 1.12. Let's find a method passing negati
 ## Instalation
 
 ```
-$ go get github.com/po3rin/chkreplace/cmd/chkreplace
+$ go get -u github.com/po3rin/chkreplace/cmd/chkreplace
 ```
 
 ## Usage
