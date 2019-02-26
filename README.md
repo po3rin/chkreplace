@@ -19,7 +19,6 @@ as CLI
 chkreplace github.com/po3rin/chkreplace/example
 example/replace.go:11:17: detect strings.Replace(...) use negative value -1
 example/replace.go:23:15: detect bytes.Replace(...) use negative value -1
-exit status 3
 ```
 
 as Analyzer
