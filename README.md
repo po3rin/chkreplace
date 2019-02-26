@@ -19,8 +19,8 @@ as CLI
 
 ```bash
 chkreplace github.com/po3rin/chkreplace/example
-example/replace.go:11:17: detect strings.Replace(...) use negative value -1
-example/replace.go:23:15: detect bytes.Replace(...) use negative value -1
+example/replace.go:11:17: detect strings.Replace use negative value -1
+example/replace.go:23:15: detect bytes.Replace use negative value -1
 ```
 
 as Analyzer
