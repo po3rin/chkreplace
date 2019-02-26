@@ -28,7 +28,6 @@ as Analyzer
 ```go
 func main() {
 	multichecker.Main(
-		// skeletonで生成したAnalyzerの初期コードの場合はinspect.Analyzerの結果に依存している
 		inspect.Analyzer,
 		checkreplace.Analyzer,
 	)
