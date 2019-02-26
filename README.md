@@ -1,5 +1,7 @@
 # chkreplace
 
+<img src="https://img.shields.io/badge/go-v1.12-blue.svg"/> [![CircleCI](https://circleci.com/gh/po3rin/chkreplace.svg?style=shield)](https://circleci.com/gh/po3rin/gotree) [![GolangCI](https://golangci.com/badges/github.com/po3rin/chkreplace.svg)](https://golangci.com)
+
 Go 1.12 released !!!
 https://golang.org/doc/go1.12
 

@@ -19,8 +19,6 @@ var Analyzer = &analysis.Analyzer{
 	},
 }
 
-var name = "Replace"
-
 // Doc - this analyzer description.
 const Doc = "checkreplace validates Replace methods to use negative number"
 
