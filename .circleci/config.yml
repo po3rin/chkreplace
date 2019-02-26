@@ -1,0 +1,41 @@
+version: 2.1
+
+orbs:
+  go-module: timakin/go-module@0.0.8
+
+executors:
+  test:
+    docker:
+      - image: circleci/golang:1.11.1-stretch
+
+jobs:
+  test:
+    executor:
+      name: test
+    steps:
+      - checkout
+      - setup_remote_docker
+      - go-module/setup
+
+      - run:
+          name: Run tests
+          command: |
+            go test ./... -coverprofile=c.out
+
+      - run:
+          name: Convert html
+          command: go tool cover -html c.out -o c.html
+
+      - store_artifacts:
+          path: c.out
+          destination: c.out
+
+      - store_artifacts:
+          path: c.html
+          destination: c.html
+
+workflows:
+  version: 2.0
+  test:
+    jobs:
+      - test
