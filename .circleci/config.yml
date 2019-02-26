@@ -6,7 +6,7 @@ orbs:
 executors:
   test:
     docker:
-      - image: circleci/golang:1.11.1-stretch
+      - image: circleci/golang:1.11.1
 
 jobs:
   test:

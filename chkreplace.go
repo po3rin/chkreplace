@@ -66,7 +66,7 @@ func run(pass *analysis.Pass) (interface{}, error) {
 					switch a := expr.X.(type) {
 					case *ast.BasicLit:
 						if a.Kind == token.INT && expr.Op == token.SUB {
-							pass.Reportf(call.Lparen, "detect %s.%s(...) use negative value -%v", idx.Name, id.Sel.Name, a.Value)
+							pass.Reportf(call.Lparen, "detect %s.%s use negative value -%s", idx.Name, id.Sel.Name, a.Value)
 						}
 					}
 
