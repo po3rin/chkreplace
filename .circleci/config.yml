@@ -36,6 +36,6 @@ jobs:
 
 workflows:
   version: 2.0
-  test:
+  test-go:
     jobs:
       - test
